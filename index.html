@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Happy Birthday Hannah</title>
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -15,12 +14,12 @@
       align-items: center;
       background: #111;
       font-family: 'Press Start 2P', cursive;
-      color: white;
+      color: #fff;
     }
 
     .screen {
-      display: none;
       text-align: center;
+      display: none;
     }
 
     .screen.active {
@@ -30,8 +29,8 @@
     .pixel-button {
       padding: 20px 30px;
       background: #ff5fa2;
-      border: none;
       color: white;
+      border: none;
       font-family: 'Press Start 2P', cursive;
       cursor: pointer;
       box-shadow: 0 0 0 4px #000, 8px 8px 0 #000;
@@ -40,10 +39,15 @@
     h1 {
       font-size: 22px;
       line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .cake {
+      width: 180px;
+      image-rendering: pixelated;
     }
   </style>
 </head>
-
 <body>
 
   <!-- Screen 1 -->
@@ -55,6 +59,7 @@
   <!-- Screen 2 -->
   <div class="screen" id="screen2">
     <h1>HAPPY BIRTHDAY<br>HANNAH 🎉</h1>
+    <img src="https://i.imgur.com/8QfQZQp.png" alt="Pixel Birthday Cake" class="cake" />
   </div>
 
   <script>
